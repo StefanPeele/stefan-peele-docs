@@ -1,0 +1,55 @@
+site_name: Stefan Peele — Technical Documentation
+site_url: https://stefanpeele.github.io/stefan-peele-docs
+site_description: Network engineering lab documentation, 
+  configurations, and technical references. .
+site_author: Stefan Peele
+
+repo_name: StefanPeele/stefan-peele-docs
+repo_url: https://github.com/StefanPeele/stefan-peele-docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Lab Infrastructure:
+    - Hardware Inventory: infrastructure/hardware.md
+    - Network Design: infrastructure/network-design.md
+    - IP Addressing: infrastructure/ip-addressing.md
+  - Cisco Router:
+    - Device Overview: router/overview.md
+    - Project 01 - Hardening: router/project-01.md
+  - Cisco Switches:
+    - overview: switches/overview.md
+  - ASA Firewall:
+    - overview: firewall/overview.md
+  - End Device Lab:
+    - overview: endpoints/overview.md
+  - Reference:
+    - Command Cheatsheets: reference/cheatsheets.md
+    - Failure Mode Library: reference/failure-modes.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
