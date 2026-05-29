@@ -25,22 +25,29 @@ theme:
 
 nav:
   - Home: index.md
-  - Lab Infrastructure:
-    - Hardware Inventory: infrastructure/hardware.md
-    - Network Design: infrastructure/network-design.md
-    - IP Addressing: infrastructure/ip-addressing.md
-  - Cisco Router:
-    - Device Overview: router/overview.md
-    - Project 01 - Hardening: router/project-01.md
-  - Cisco Switches:
-    - overview: switches/overview.md
-  - ASA Firewall:
-    - overview: firewall/overview.md
-  - End Device Lab:
-    - overview: endpoints/overview.md
+  - Router:
+    - Overview: router/index.md
+  - Switches:
+    - Overview: switches/index.md
+  - L3 Switch:
+    - Overview: l3-switch/index.md
+  - Firewall:
+    - Overview: firewall/index.md
+  - End Devices:
+    - Proxmox:
+      - Overview: end-devices/proxmox/index.md
+    - Linux:
+      - Overview: end-devices/linux/index.md
+    - Windows:
+      - Overview: end-devices/windows/index.md
+    - Security:
+      - Overview: end-devices/security/index.md
+  - Setup:
+    - Overview: setup/index.md
   - Reference:
-    - Command Cheatsheets: reference/cheatsheets.md
-    - Failure Mode Library: reference/failure-modes.md
+    - Overview: reference/index.md
+  - Expansion:
+    - Overview: expansion/index.md
 
 markdown_extensions:
   - pymdownx.highlight:
